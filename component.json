@@ -2,7 +2,7 @@
   "name": "throttle",
   "repo": "timoxley/throttle",
   "description": "Throttle how frequently a function may be invoked.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["underscore", "function", "debounce", "throttle"],
   "dependencies": {},
   "development": {
