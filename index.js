@@ -14,7 +14,7 @@ module.exports.debounce = debounce
  */
 function throttle(wait, func) {
   var context, args, timeout, throttling, more, result;
-  var whenDone = debounce(function(){ more = throttling = false; }, wait);
+  var whenDone = debounce(wait, function(){ more = throttling = false; });
   return function() {
     context = this; args = arguments;
     var later = function() {
