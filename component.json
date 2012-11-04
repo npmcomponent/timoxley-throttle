@@ -1,0 +1,15 @@
+{
+  "name": "throttle",
+  "repo": "timoxley/throttle",
+  "description": "Throttle how frequently a function may be invoked.",
+  "version": "0.0.1",
+  "keywords": ["underscore", "function"],
+  "dependencies": {},
+  "development": {
+    "timoxley/assert": "*"
+  },
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

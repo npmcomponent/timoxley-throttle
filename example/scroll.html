@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      body {
+        min-height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Check console while scrolling page.</h4>
+    <script src="/build/build.js"></script>
+    <script>
+    var throttle = require('throttle')
+    var assert = require('timoxley-assert')
+    window.addEventListener('scroll', throttle(1000, function(e) {
+      console.log('I should only happen once every second.')
+      // silly example to show arguments are preserved
+      assert.ok(e instanceof Event)
+    }))
+    var anotherOnScroll = function(e) {
+      console.log('I should only happen once every '+this.n+' seconds.')
+    }
+    // another silly example to show value of `this` is preserved. Note the bind.
+    window.addEventListener('scroll', throttle(2000, anotherOnScroll.bind({n: 2})))
+    </script>
+  </body>
+</html>
