@@ -3,7 +3,7 @@
   "repo": "timoxley/throttle",
   "description": "Throttle how frequently a function may be invoked.",
   "version": "0.0.1",
-  "keywords": ["underscore", "function"],
+  "keywords": ["underscore", "function", "debounce", "throttle"],
   "dependencies": {},
   "development": {
     "timoxley/assert": "*"
